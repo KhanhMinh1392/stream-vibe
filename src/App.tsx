@@ -1,8 +1,6 @@
-import { Route, Routes } from 'react-router';
 import Layout from '@/components/Layout';
+import { Route, Routes } from 'react-router';
 import { routes } from './routes';
-import { Suspense } from 'react';
-import Loading from './components/Loading';
 
 function App() {
   return (
@@ -12,11 +10,9 @@ function App() {
           key={path}
           path={path}
           element={
-            <Suspense fallback={<Loading />}>
-              <Layout>
-                <Comp />
-              </Layout>
-            </Suspense>
+            <Layout>
+              <Comp />
+            </Layout>
           }
         />
       ))}

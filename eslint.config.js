@@ -4,6 +4,7 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 import tseslint from 'typescript-eslint'
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
+import pluginQuery from '@tanstack/eslint-plugin-query'
 
 export default tseslint.config(
   { ignores: ['dist'] },
@@ -27,5 +28,13 @@ export default tseslint.config(
       'prettier/prettier': 'error',
     },
   },
-  eslintPluginPrettierRecommended
+  eslintPluginPrettierRecommended,
+  {
+    plugins: {
+      '@tanstack/query': pluginQuery,
+    },
+    rules: {
+      '@tanstack/query/exhaustive-deps': 'error',
+    },
+  },
 )
