@@ -23,8 +23,8 @@ export default function Categories() {
     <div className="mx-auto max-w-full px-20 pt-80">
       <div className="flex items-center justify-between gap-5">
         <div className="w-[62rem] space-y-3.5">
-          <h1 className="text-4xl font-bold">Explore our wide variety of categories</h1>
-          <p className="text-lg text-gray-500">
+          <h1 className="text-[1.75rem] font-bold 2xl:text-4xl">Explore our wide variety of categories</h1>
+          <p className="text-base text-gray-600 2xl:text-lg">
             Whether you're looking for a comedy to make you laugh, a drama to make you think, or a documentary to learn
             something new
           </p>
@@ -59,7 +59,7 @@ export default function Categories() {
                   <ListComponent
                     items={movies.filter((movie) => movie.genre_ids.includes(genre.id)).slice(0, 4)}
                     renderItem={(movie) => (
-                      <div key={movie.id} className="h-28 w-28 rounded-xl bg-gray-400/20">
+                      <div key={movie.id} className="rounded-xl bg-gray-400/20">
                         <img
                           src={`https://image.tmdb.org/t/p/w500${movie.backdrop_path}`}
                           alt={movie.title}

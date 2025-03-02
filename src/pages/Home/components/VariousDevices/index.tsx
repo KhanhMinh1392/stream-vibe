@@ -16,10 +16,12 @@ const devices = [
 
 export default function VariousDevices() {
   return (
-    <div className="m-auto max-w-full px-20 pt-32">
+    <div className="m-auto max-w-full px-20 py-32 2xl:py-36">
       <div className="space-y-3.5">
-        <h1 className="text-4xl font-bold">We Provide you streaming experience across various devices.</h1>
-        <p className="break-words text-lg text-gray-400">
+        <h1 className="text-[1.75rem] font-bold 2xl:text-4xl">
+          We Provide you streaming experience across various devices.
+        </h1>
+        <p className="text-base text-gray-600 2xl:text-lg">
           With StreamVibe, you can enjoy your favorite movies and TV shows anytime, anywhere. Our platform is designed
           to be compatible with a wide range of devices, ensuring that you never miss a moment of entertainment.
         </p>

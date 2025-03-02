@@ -115,6 +115,6 @@
     font-family: 'Manrope', sans-serif;
   }
   body {
-    @apply bg-black text-white;
+    @apply bg-black/95 text-white;
   }
 }
