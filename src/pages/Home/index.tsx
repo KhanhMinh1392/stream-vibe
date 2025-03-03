@@ -1,5 +1,5 @@
 import Thumbnail from '@/assets/images/thumbnail.png';
-import { Categories, FAQ, VariousDevices } from './components';
+import { Banner, Categories, FAQ, Pricing, VariousDevices } from './components';
 import { Button } from '@/components/Button';
 import { Play } from 'lucide-react';
 
@@ -25,6 +25,8 @@ export default function Home() {
       <Categories />
       <VariousDevices />
       <FAQ />
+      <Pricing />
+      <Banner />
     </>
   );
 }
