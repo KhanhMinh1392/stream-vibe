@@ -22,10 +22,10 @@ const pricingList = [
 
 export default function Pricing() {
   return (
-    <div className="m-auto max-w-full px-20 py-32 2xl:py-36">
-      <div className="flex items-center gap-20">
+    <div className="m-auto max-w-full px-20 py-32 2xl:px-40 2xl:py-36">
+      <div className="flex items-center justify-between gap-20">
         <div className="space-y-1">
-          <h1 className="text-[1.75rem] font-bold 2xl:text-4xl">Choose the plan that's right for you</h1>
+          <h1 className="text-[1.75rem] font-bold 2xl:text-[2.25rem]">Choose the plan that's right for you</h1>
           <p className="text-base text-gray-600 2xl:text-lg">
             Join StreamVibe and select from our flexible subscription options tailored to suit your viewing preferences.
             Get ready for non-stop entertainment!
@@ -36,14 +36,17 @@ export default function Pricing() {
           <Button className="bg-black px-5 py-3">Yearly</Button>
         </div>
       </div>
-      <div className="mt-14 grid grid-cols-3 gap-5">
+      <div className="mt-14 grid grid-cols-3 gap-5 2xl:gap-8">
         <ListComponent
           items={pricingList}
           renderItem={(pricing, index) => (
-            <div key={index} className="flex flex-col gap-10 rounded-xl border border-gray-800 bg-gray-500/10 p-10">
+            <div
+              key={index}
+              className="flex flex-col gap-10 rounded-xl border border-gray-800 bg-gray-500/10 p-10 2xl:p-[3.125rem]"
+            >
               <div className="space-y-3">
-                <h1 className="text-xl font-bold">{pricing.title}</h1>
-                <p className="text-base text-gray-600">{pricing.description}</p>
+                <h1 className="text-xl font-bold 2xl:text-2xl">{pricing.title}</h1>
+                <p className="text-justify text-base text-gray-600 2xl:text-lg">{pricing.description}</p>
               </div>
               <p className="text-4xl font-bold">
                 {pricing.price}

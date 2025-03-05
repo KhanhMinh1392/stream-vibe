@@ -20,10 +20,10 @@ export default function Categories() {
   } = useMovieList();
 
   return (
-    <div className="mx-auto max-w-full px-20 pt-80">
+    <div className="mx-auto max-w-full px-20 pt-80 2xl:px-40">
       <div className="flex items-center justify-between gap-5">
         <div className="w-[62rem] space-y-3.5">
-          <h1 className="text-[1.75rem] font-bold 2xl:text-4xl">Explore our wide variety of categories</h1>
+          <h1 className="text-[1.75rem] font-bold 2xl:text-[2.25rem]">Explore our wide variety of categories</h1>
           <p className="text-base text-gray-600 2xl:text-lg">
             Whether you're looking for a comedy to make you laugh, a drama to make you think, or a documentary to learn
             something new
