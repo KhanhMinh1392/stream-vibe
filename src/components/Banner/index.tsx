@@ -2,7 +2,7 @@ import { Button } from '@/components/Button';
 
 export default function Banner() {
   return (
-    <div className="m-auto max-w-full px-20 pb-32 2xl:px-40 2xl:pb-36">
+    <div className="m-auto max-w-full px-20 py-32 2xl:px-40 2xl:py-36">
       <div className="flex h-[250px] w-full items-center justify-between bg-banner bg-cover px-14">
         <div className="space-y-1">
           <h1 className="text-3xl text-white">Start your free trial today!</h1>

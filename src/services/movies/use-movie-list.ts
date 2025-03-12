@@ -10,6 +10,7 @@ export type Movie = {
   vote_average: number;
   genre_ids: number[];
   backdrop_path: string;
+  overview: string;
 };
 
 interface GetMovieListResponse {

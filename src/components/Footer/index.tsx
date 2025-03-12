@@ -2,7 +2,7 @@ import { Facebook, LinkedinIcon, TwitchIcon } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <div className="bg-black px-20 pb-10 pt-20 2xl:px-40 2xl:pt-28">
+    <footer className="bg-black px-20 pb-10 pt-20 2xl:px-40 2xl:pt-28">
       <ul className="grid grid-cols-6 gap-5">
         <li>
           <h6 className="mb-5 text-lg font-semibold">Home</h6>
@@ -67,6 +67,6 @@ export default function Footer() {
           <li>Cookie Policy</li>
         </ul>
       </div>
-    </div>
+    </footer>
   );
 }

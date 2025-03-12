@@ -22,7 +22,7 @@ const pricingList = [
 
 export default function Pricing() {
   return (
-    <div className="m-auto max-w-full px-20 py-32 2xl:px-40 2xl:py-36">
+    <div className="m-auto max-w-full px-20 pt-32 2xl:px-40 2xl:pt-36">
       <div className="flex items-center justify-between gap-20">
         <div className="space-y-1">
           <h1 className="text-[1.75rem] font-bold 2xl:text-[2.25rem]">Choose the plan that's right for you</h1>

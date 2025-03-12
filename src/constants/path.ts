@@ -5,4 +5,5 @@ export const API_PATH = {
 
 export const ROUTE_PATH = {
   HOME: '/',
+  MOVIE: '/movie',
 } as const;
