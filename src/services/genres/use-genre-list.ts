@@ -2,7 +2,7 @@ import instance from '@/configs/axiosInstance';
 import { API_PATH } from '@/constants/path';
 import { useSuspenseQuery } from '@tanstack/react-query';
 
-type Genre = {
+export type Genre = {
   id: number;
   name: string;
 };

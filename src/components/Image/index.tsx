@@ -16,5 +16,5 @@ export default function Image(props: ImageProps) {
     original: 'original',
   };
 
-  return <img src={`https://image.tmdb.org/t/p/${sizes[size]}/${path}`} alt={alt} {...rest} />;
+  return <img src={`https://image.tmdb.org/t/p/${sizes[size]}/${path}`} alt={alt} loading="lazy" {...rest} />;
 }

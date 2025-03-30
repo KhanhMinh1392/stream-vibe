@@ -1,10 +1,13 @@
-import { useMovieList } from '@/services/movies';
-import Image from '@/components/Image';
 import { Button } from '@/components/Button';
-import { ArrowLeft, ArrowRight, Heart, Play, Plus, Volume2 } from 'lucide-react';
+import Image from '@/components/Image';
 import ListComponent from '@/components/List';
 import { cn } from '@/lib/utils';
+import { useMovieList } from '@/services/movies';
+import { ArrowLeft, ArrowRight, Heart, Play, Plus, Volume2 } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import OurGenres from './components/OurGenres';
+import Popular from './components/PopularGeneres';
+import { useGenreList } from '@/services/genres';
 
 const MAXIMUM_DOT = 3;
 const MAXIMUM_INDEX = 2;
@@ -14,6 +17,10 @@ export default function Movies() {
   const [dot, setDot] = useState(MINIMUM_INDEX);
 
   const { data: movies } = useMovieList();
+  const {
+    data: { genres },
+  } = useGenreList();
+
   const movie = movies.results[dot];
 
   useEffect(() => {
@@ -80,6 +87,13 @@ export default function Movies() {
               <ArrowRight />
             </Button>
           </div>
+        </div>
+      </div>
+      <div className="relative mt-24 rounded-xl border border-gray-700 p-10">
+        <h6 className="absolute -top-5 w-fit rounded-lg bg-red-600 px-6 py-2.5">Movies</h6>
+        <div className="space-y-20">
+          <OurGenres movies={movies.results} genres={genres} />
+          <Popular genres={genres} />
         </div>
       </div>
     </div>
